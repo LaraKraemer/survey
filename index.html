@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Customer Satisfaction Survey</h1>
+    <p id="description">Thank you for taking the time to help us improve our service</p>
+    <form id="survey-form">
+            <fieldset>
+                <label for="personal-details">
+                <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter your name" id="personal-details" required></label>
+                <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter your email" id="personal-details"  required></label>
+                <label for="number" id="number-label">Age<input id="number" type="number" min="13" max="120" placeholder="Age" id="personal-details"  required></label>
+                </label>
+            </fieldset>
+            <fieldset>
+            <label for="service-type">"What type of service do you use most frequently?"
+                <input type="radio" name="service-type" id="service-type" value="dry-cleaning" class="inline"> Dry cleaning
+                <input type="radio" name="service-type" id="service-type" value="house-cleaning" class="inline"> House cleaning
+                <input type="radio" name="service-type" id="service-type" value="full-package" class="inline"> Full package
+        </label>
+         </fieldset>
+         <fieldset>
+        <label>How frequently do you utilize our service? <select name="dropdown" id="dropdown">
+            <option value="Choose one">Choose one</option>
+              <option value="Every week">Every week</option>
+              <option value="Twice a month">Twice a month</option>
+              <option value="Once per month">Once per month</option>
+              <option value="Once per quarter">Once per quarter</option>
+              <option value="Once per year">Once per year</option>
+          </select>
+          </label>
+        </fieldset>
+        <fieldset>
+            <label for="new-services">Which of these additional new service would you prefer us to initiate?
+                <input type="checkbox" value="dog-walking" class="inline"> Dog walking
+                <input type="checkbox" value="window-cleaning" class="inline"> Window cleaning
+                <input type="checkbox" value="laundry-cleaning" class="inline"> Laundry cleaning
+                <input type="text" placeholder="Enter your proposal" class="inline"> Other proposals
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="comment-section">
+            Here is room for any comments or suggestions on our services
+            <textarea name="comments" id="comment-section" cols="30" rows="10"></textarea>
+            </label>
+        </fieldset>
+        <label for="submit">
+            <input id="submit" type="submit">
+        </label>
+    </form>
+</body>
+</html>
